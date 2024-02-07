@@ -21,8 +21,12 @@ function createPassword() {
     passwordBox.value = password
 }
 
+const generateButton = document.getElementById('btn');
+generateButton.addEventListener('click', ()=> {
+    createPassword();
+})
+
 const copyButton = document.getElementById('copy');
 copyButton.addEventListener('click', () => {
     window.navigator.clipboard.writeText(password.value)
-  }
-)
+})
