@@ -11,12 +11,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Generate a <br><span>Random Password</span></h1>
+        <h1>Generate a <span id="red">Strong</span><br><span>Random</span> Password</h1>
         <div class="display">
-            <input type="text" id="password" placeholder="Password">
+            <input type="text" id="input-box" placeholder="Password">
             <img id="copy" src="./images/copy.png">
         </div>
-        <button id="btn"><img src="./images/generate.png">Generate Password</button>
+        <div class="buttons">
+            <button id="btn"><img src="./images/generate.png">Generate Password</button>
+            <div class="strong">
+                <p id="message">Password is <span id="strength"></span></p>
+            </div>
+        </div>
     </div>
 <script src="./main.js"></script>
 </body>
